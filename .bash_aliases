@@ -22,6 +22,8 @@ alias irc="mosh agmlego -- screen -xdUS irssi"
 
 alias duc="du --max-depth=1 -ha | sort -rh | sed 's/\.\///' | sed /^0/d"
 
+alias composer="$COMPOSER_HOME\composer.phar"
+
 mkcd () { mkdir -p "$@" && cd "$@"; }
 
 extract () {
