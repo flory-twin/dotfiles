@@ -22,7 +22,7 @@ alias irc="mosh agmlego -- screen -xdUS irssi"
 
 alias duc="du --max-depth=1 -ha | sort -rh | sed 's/\.\///' | sed /^0/d"
 
-alias composer="$COMPOSER_HOME/composer.phar"
+alias composer="php $COMPOSER_HOME/composer.phar"
 
 # Not aliases, but I can't figure out how to get them to act like aliases.  (The results are odd when called.)
 export start_mysql="sudo /usr/bin/mysqld_safe --user=mysql &"
@@ -50,3 +50,20 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
+
+# Additional stuff from original system .bashrc...
+
+alias ls='ls --color=auto'
+#alias dir='dir --color=auto'
+#alias vdir='vdir --color=auto'
+
+#alias grep='grep --color=auto'
+#alias fgrep='fgrep --color=auto'
+#alias egrep='egrep --color=auto'
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+
