@@ -1,18 +1,34 @@
 # Set that great necessity for Eclipse.  Note that Groovy will automatically     look in $JAVA_HOME/bin/java.
-export JAVA_HOME=/usr
-export ECLIPSE_HOME=/usr/local/bin/eclipse/photon
-export ANDROID_HOME=/usr/local/bin/android-studio/bin
-export SELENIUM_HOME=/usr/lib/selenium
+
+#export JAVA_HOME=/usr
+#export ECLIPSE_HOME=/usr/local/bin/eclipse/photon
+#export ANDROID_HOME=/usr/local/bin/android-studio/bin
+#export SELENIUM_HOME=/usr/lib/selenium
+
 # Configure Java for Eclipse, Android Studio, and WebDriver and its drivers
-export PATH=$PATH:$JAVA_HOME:$ECLIPSE_HOME:$ANDROID_HOME:$SELENIUM_HOME
+#export PATH=$PATH:$JAVA_HOME:$ECLIPSE_HOME:$ANDROID_HOME:$SELENIUM_HOME
+
 # Configure/add php composer
-export COMPOSER_HOME=/usr/local/bin/composer
+export COMPOSER_HOME=/usr/bin
 export PATH=$PATH:$COMPOSER_HOME
-# Add Laravel
-export LARAVEL_HOME=/usr/local/bin/laravel
-export PATH=$PATH:$LARAVEL_HOME
-# Put Laravel's dependencies on the path so it can execute its 'new' command.
-export PATH=$PATH:$COMPOSER_HOME/vendor/bin
+
+## Add Laravel
+#export LARAVEL_HOME=/usr/local/bin/laravel
+#export PATH=$PATH:$LARAVEL_HOME
+#
+## Put Laravel's dependencies on the path so it can execute its 'new' command.
+#export PATH=$PATH:$COMPOSER_HOME/vendor/bin
+
 # Put Selenium Server on the path.
-export SELENIUM_HOME=/mnt/WorkingFiles/Projects/CRM/makermanager/tests/selenium-server/
-export PATH=$PATH:$SELENIUM_HOME
+#export SELENIUM_HOME=/mnt/WorkingFiles/Projects/CRM/makermanager/tests/selenium-server/
+#export PATH=$PATH:$SELENIUM_HOME
+
+# Add MySQL (its location is already on the path).
+export MYSQL_HOME=/usr/bin
+# For some reason, this evaluates to blank when echoed!  Not sure what's up with that.
+
+export PHPUNIT_PHAR_HOME=/usr/lib
+export PHP_SEVEN_THREE_HOME=/etc/php/7.3
+export PHPRC=$PHP_SEVEN_THREE_HOME
+export PHP_CGI_HOME=$PHP_SEVEN_THREE_HOME/cgi
+#export PHP_XDEBUG_HOME=/usr/lib/php/20170718
