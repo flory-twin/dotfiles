@@ -1,0 +1,26 @@
+# See https://wiki.archlinux.org/index.php/Xterm
+
+# Set the correct terminal name.
+XTerm.termName: xterm-256color
+
+# Make selections go to the clipboard, not to the PRIMARY buffer.
+XTerm.vt100.selectToClipboard: true
+
+# Override the default history size of 1024 lines.
+XTerm.vt100.saveLines: 8192
+
+# Show the scrollbar by default.
+XTerm.vt100.scrollBar: true
+
+# Assign PGUP and PGDN as the paging keys.
+XTerm.
+
+# Set the default font size to 12 pt.
+XTerm.vt100.faceSize: 12
+
+# Set custom key bindings.
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key>+: larger-vt-font() \n\
+    Ctrl <Key>-: smaller-vt-font() \n\
+    Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl <Key>V: insert-selection(CLIPBOARD)
