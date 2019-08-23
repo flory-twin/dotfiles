@@ -1,0 +1,2 @@
+# Attempt to prevent the annoyance of ringing the bell every time I double-tab for autocomplete
+set show-all-if-ambiguous on
