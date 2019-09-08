@@ -22,7 +22,9 @@ alias irc="mosh agmlego -- screen -xdUS irssi"
 
 alias duc="du --max-depth=1 -ha | sort -rh | sed 's/\.\///' | sed /^0/d"
 
-alias composer="php $COMPOSER_HOME/composer.phar"
+alias composer="$COMPOSER_HOME/composer.phar"
+
+alias eclipse ="$ECLIPSE_HOME/eclipse"
 
 # Not aliases, but I can't figure out how to get them to act like aliases.  (The results are odd when called.)
 export start_mysql="sudo /usr/bin/mysqld_safe --user=mysql &"
